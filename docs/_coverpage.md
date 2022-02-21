@@ -4,4 +4,4 @@
 
 
 [GitHub](https://github.com/mengfanfei/myDocs/)
-[Getting Started](#HelloWorld)
+[Getting Started](#hello-world)
