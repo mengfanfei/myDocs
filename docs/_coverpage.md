@@ -1,5 +1,5 @@
 
-![logo](_media/avator.jpeg ':size=100')
+![logo](_media/avator.png ':size=100')
 # 前端笔记 <small>0.0.1</small>
 
 
