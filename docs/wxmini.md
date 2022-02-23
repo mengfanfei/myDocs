@@ -29,3 +29,7 @@ Component({
   "pureDataPattern": "^_"
 }
 ```
+## 简易双向绑定
+```xml
+<input model:value="{{value}}" />
+```

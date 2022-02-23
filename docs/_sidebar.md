@@ -1,6 +1,5 @@
 * JavaScript
-* CSS
-  
+* [CSS](css.md)
 * HTML
 * Vue
 * React
