@@ -33,3 +33,28 @@ Component({
 ```xml
 <input model:value="{{value}}" />
 ```
+
+## 小程序实现Tab栏（position: sticky）切换时固定在顶部
+```javascript
+const query = wx.createSelectorQuery()
+let top = 0
+let scrollTop = 0
+// #thegoodsList为列表的id
+query.select('#thegoodsList').boundingClientRect(res => {
+  top = res.top // 节点的上边界坐标
+})
+query.selectViewport().scrollOffset(res => {
+  scrollTop = res.scrollTop
+})
+query.exec(() => {
+  if (top >= this.data.barHeight + 50) {
+  } else {
+    // 只需要获取到最开始thegoodsList距离上边的高度， 然后减去头部和tabs的高度，就是需要滚动的距离
+    // 获取thegoodsList距离上边的高度，通过页面滑动的距离scrollTop加上实时hegoodsList距离上边的高度top
+    wx.pageScrollTo({
+      duration: 0,
+      scrollTop: scrollTop + top - this.data.barHeight - 48 // 48 = 50 -2px的下边框
+    })
+  }
+})
+```
