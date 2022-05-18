@@ -6,3 +6,8 @@
 ```shell
 docsify serve docs
 ```
+
+## 线上预览
+
+> https://mengfanfei.github.io/myDocs (如果打不开，请翻墙试试)
+
